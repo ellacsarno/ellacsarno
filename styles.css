@@ -1,0 +1,138 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: ProximaNova-Regular;
+    background-color: #fff;
+    color: black;
+
+    a {
+        color:purple;
+        font-family: "ProximaNova-bold";
+        text-decoration: none;
+        h1 {
+          font-family: "LeagueSpartan-Bold";
+          color: black;
+        }
+    }
+}
+
+@font-face {
+    font-family: "ProximaNova-Regular";
+    src: url("ProximaNova-Regular.ttf");
+  }
+
+  @font-face {
+    font-family: "ProximaNova-bold";
+    src: url("ProximaNova-Bold.ttf");
+  }
+
+  @font-face {
+    font-family: "ProximaNova-italic";
+    src: url("ProximaNova-italic.ttf");
+  }
+
+  @font-face {
+    font-family: "LeagueSpartan-Bold";
+    src: url("LeagueSpartan-Bold.ttf");
+  }
+
+  @font-face {
+    font-family: "Alata-Regular";
+    src: url("Alata-Regular.ttf");
+  }
+  
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    align-items: stretch;
+}
+
+footer {
+    background: black;
+    color: #ffffff;
+    text-align: center;
+    padding: 40px 0;
+    /* Optional styling */
+    font-size: 14px;
+    position:absolute;
+    bottom: 0px;
+    width: 100%;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10%;
+    box-sizing: border-box;
+    align-items: center;
+    
+}
+
+.title h1 {
+    font-size: 31,5px;
+    font-weight: bold;
+    letter-spacing: 20px;
+    font-family: LeagueSpartan-Bold;
+}
+
+.navigation nav ul {
+    list-style: none;
+    padding: 0;
+    font-size: 20px;
+    font-family: alata-regular;
+}
+
+.navigation nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.navigation nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* width: 80%; */
+    padding: 0 10%;
+    margin-top: 20px;
+}
+
+.images {
+    flex: 1;
+    display: flex;
+    align-items: right;
+    justify-content: space-between; /* This will add space between your images */
+    flex-direction: row;
+
+    img {
+        width: 48%; 
+        /* width: 200px; */
+        /* height: auto; Maintain aspect ratio */
+        flex: 1;
+        padding-right: 4%;
+    }
+}
+
+
+.content {
+    padding: 0 20px;
+    flex:1;
+ 
+}
+
+.content p {
+    line-height: 1.6;
+    b {
+        font-family: "ProximaNova-bold";
+    }
+}
+
