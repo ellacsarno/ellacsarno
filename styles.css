@@ -108,15 +108,15 @@ main {
 .images {
     flex: 1;
     display: flex;
-    align-items: right;
-    justify-content: space-between; /* This will add space between your images */
+    align-items: center;
+    justify-content: center;
     flex-direction: row;
 
     img {
         width: 48%; 
         max-width: 100%;
         height: auto;
-        max-height: 100%;
+        max-height: 300px;
         flex: 1;
         padding-right: 4%;
     }
