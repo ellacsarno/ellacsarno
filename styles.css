@@ -148,14 +148,14 @@ h1 {
     flex: 1;
     padding-right: 4%;
     padding-bottom:15%;
+}
 
-    .projects_bio img {
-        max-height: 500px;
-        flex: 1;
-        padding-right: 4%;
-        padding-bottom:15%;
-        padding-top:20px;
-    }
+.projects_bio img {
+    max-height: 500px;
+    flex: 1;
+    padding-right: 4%;
+    padding-bottom:15%;
+    padding-top:20px;
 }
 
 
