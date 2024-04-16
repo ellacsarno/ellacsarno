@@ -129,6 +129,8 @@ h1 {
         padding-right: 4%;
         padding-bottom:4%;
     }
+
+    
 }
 
 .projects img {
@@ -137,11 +139,21 @@ h1 {
     max-height: 300px;
     flex: 1;
     padding-right: 4%;
-    padding-bottom:4%;
+    padding-bottom:15%;
+}
+
+.projects_bio img {
+    max-width: 100%;
+    max-height: 500px;
+    flex: 1;
+    padding-right: 4%;
+    padding-bottom:15%;
+    padding-top:20px;
 }
 
 .content {
     padding: 0 20px;
+    padding-bottom: 40px;
     flex:1;
  
 }
@@ -163,3 +175,6 @@ h1 {
     }
 }
 
+.rowtext {
+   padding-left: 4%;
+}
