@@ -218,3 +218,9 @@ h1 {
 .rowtext {
    padding-left: 4%;
 }
+
+.rowtext p {
+    line-height: 1.6;
+    b {
+        font-family: "ProximaNova-bold";
+    }
