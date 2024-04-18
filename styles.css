@@ -130,6 +130,7 @@ h1 {
         width: max-content;
         flex-direction: column;
         justify-content: center;
+
     }
 
     img {
@@ -185,6 +186,25 @@ h1 {
     }
 }
 
+.content_projects {
+    padding: 0 20px;
+    padding-bottom: 40px;
+    display:flex;
+    flex: 1;
+    flex-flow: row;
+
+    @media (max-width: 800px) {
+        flex-flow: row-reverse;
+        }
+
+}
+
+.content_projects p {
+    line-height: 1.6;
+    b {
+        font-family: "ProximaNova-bold";
+    }
+}
 .row {
     display: flex;
     flex-direction: row;
