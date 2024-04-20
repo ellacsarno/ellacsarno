@@ -1,20 +1,104 @@
 body, html {
     margin: 0;
     padding: 0;
-    font-family: ProximaNova-Regular;
-    background-color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: wheat;
     color: black;
 
     a {
-        color:purple;
-        font-family: "ProximaNova-bold";
+        color: white;
+        font-weight: 800;
+        background-color: black;
+        padding-left: 3px;
+        padding-right: 3px;
         text-decoration: none;
-        h1 {
-          font-family: "LeagueSpartan-Bold";
-          color: black;
-        }
+        border-bottom: none;
+    }
+
+    a:hover {
+        color: white;
+        background-color: #b03608;
+        padding-left: 3px;
+        padding-right: 3px;
+        text-decoration: none;
+        border-bottom: none;
+    }
+
+    a:visited {
+        color: white;
+        text-decoration: none;
+        border-bottom: none;
+    }
+
+    a:visited:hover {
+        color: white;
+        background-color: #b03608;
+        padding-left: 3px;
+        padding-right: 3px;
+        text-decoration: underline;
+        border-bottom: none;
+    }
+
+    .navigation a {
+        color: black !important;
+        font-family: LeagueSpartan-Bold;
+        background: none !important;
+        padding: 0;
+    }
+
+    .navigation a:hover {
+        color: #b03608 !important;
+        border-bottom: none;
+        font-family: LeagueSpartan-Bold;
+        background: none !important;
+        padding: 0;
+    }
+    
+    .title a {
+        color: black !important;
+        text-decoration: none;
+        border-bottom: none;
+        font-family: LeagueSpartan-Bold;
+        background: none !important;
+        padding: 0;
+    }
+
+    .title a:hover {
+        color: #b03608 !important;
+        text-decoration: none;
+        border-bottom: none;
+        font-family: LeagueSpartan-Bold;
+        background: none !important;
+        padding: 0;
     }
 }
+
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: #b03608;
+  }
+  
+  .hover-underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #b03608;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .hover-underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+
 
 @font-face {
     font-family: "ProximaNova-Regular";
@@ -110,6 +194,10 @@ main {
     }
 }
 
+li {
+    padding-bottom: 5px;
+}
+
 h1 {
     font-size: 21,5px;
     font-weight: bold;
@@ -154,13 +242,10 @@ h1 {
 
     
 }
-.projects_bio img {
-    width: 100%;
-    max-height: 500px;
-    flex: 1;
-    padding-right: 4%;
-    padding-bottom:15%;
-    padding-top:20px;
+
+.footericon {
+max-width: 24px;
+height: auto;
 }
 
 .projects img {
@@ -170,7 +255,6 @@ h1 {
     padding-right: 4%;
     padding-bottom:15%;
 }
-
 
 .content {
     padding: 0 20px;
@@ -182,36 +266,56 @@ h1 {
 .content p {
     line-height: 1.6;
     b {
-        font-family: "ProximaNova-bold";
+        font-family: 'Courier New';
     }
 }
 
 .content_projects {
     padding: 0 20px;
     padding-bottom: 40px;
-    display:flex;
+    display: flex;
     flex: 1;
     flex-flow: row;
-
+  
     @media (max-width: 800px) {
-        flex-flow: row-reverse;
+        flex-wrap:wrap;
         }
 
+}
+
+.content_projects img {
+    width: 600px;
+    padding-bottom: 15%;
+    padding-top: 20px;
+    padding-left: 10%;
+    @media (max-width: 800px) {
+       max-width: fit-content;
+       padding-left: 0;
+        }
 }
 
 .content_projects p {
     line-height: 1.6;
     b {
-        font-family: "ProximaNova-bold";
+        font-family: 'Courier New';
     }
 }
+
 .row {
     display: flex;
-    flex-direction: row;
+    flex-flow: row;
 
     @media (max-width: 800px) {
     flex-direction: column;
-        
+    }
+}
+
+.row-bio {
+    display: flex;
+    flex-flow: row;
+
+    @media (max-width: 800px) {
+    flex-direction: column-reverse;
     }
 }
 
@@ -222,5 +326,6 @@ h1 {
 .rowtext p {
     line-height: 1.6;
     b {
-        font-family: "ProximaNova-bold";
+        font-family: 'Courier New';
     }
+}
